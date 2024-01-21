@@ -1,0 +1,100 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    padding: 20px;
+}
+
+.logo-container img {
+    max-width: 100%;
+}
+
+.navigation {
+    width: 100%;
+}
+
+.nav-item {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+
+    transition: background-color 0.3s;
+}
+.nav-item:hover {
+    color:#ffffff;
+    background-color: #2C3E50; /* Ganti dengan warna latar belakang yang diinginkan saat dihover */
+}
+
+.nav-item.active {
+    background-color:#2C3E50; 
+    color: #ffffff;
+}
+
+.nav-item:not(.active):hover {
+    background-color: #2C3E50;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #ecf0f1;
+}
+
+.header {
+    background-color: #2C3E50;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    color: #ecf0f1;
+}
+
+.search-container input, .search-container button {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+
+.content {
+    padding: 20px;
+    /* Custom content styles */
+}
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #3a5773;
+    color: #FFFFFF;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
